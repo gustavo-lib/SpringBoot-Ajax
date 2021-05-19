@@ -5,8 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View</title>
+    <script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(
+			function() {
+				$.getJSON("http://localhost:8080/person", function(result) {
+					$.each(result, function(key, value) {
+						$("#personJson").append(
+								value.id + " " + value.name + " " + value.age
+										+ " " + value.address + "<br>");
+					});
+				});
+			});
+</script>
 </head>
 <body>
-    
+    <div id="personJson"></div>
 </body>
 </html>

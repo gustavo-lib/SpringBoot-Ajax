@@ -2,41 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $("button").click(function () {
-                var personModel = {
-                    name: "Homero Simpson",
-                    age: "59",
-                    addres: "Av nose 1478"
-                };
-                var requestJSON = JSON.stringify(personModel);
-                $.ajax({
-                    type: "POST",
-                    url: "http://localhost:8080/employees",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    data: requestJSON,
-                    success: function (data) {
-                        alert(data);
-                    },
-                    error: function (data) {
-                    }
-                });
-            });
-        });
-    </script>
-    <title>add person</title>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			var personModel = {
+				name : "Homero Simpson",
+				age : "59",
+				address : "Av nose 1478"
+			};
+			var requestJSON = JSON.stringify(personModel);
+			$.ajax({
+				type : "POST",
+				url : "http://localhost:8080/person",
+				headers : {
+					"Content-Type" : "application/json"
+				},
+				data : requestJSON,
+				success : function(data) {
+					alert(data);
+				},
+				error : function(data) {
+				}
+			});
+		});
+	});
+</script>
+<title>add person</title>
 </head>
 
 <body>
-
+	<button>Click here to submit the form</button>
 </body>
 
 </html>
