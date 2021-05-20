@@ -3,6 +3,7 @@ package com.gortiz.rest.restajax.controllerrest;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,7 +30,7 @@ public class ControllerRest {
 	@GetMapping(value = "/persons")
 	public ResponseEntity<Object> getpersons()
 	{
-		List<person> personList = personService.getpersons();
+		List<Person> personList = personService.getPersons();
 		return new ResponseEntity<>(personList, HttpStatus.OK);
 	}
 
