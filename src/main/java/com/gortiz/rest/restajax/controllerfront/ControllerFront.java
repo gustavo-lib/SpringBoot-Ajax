@@ -1,4 +1,4 @@
-package com.gortiz.rest.restajax.controller;
+package com.gortiz.rest.restajax.controllerfront;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
