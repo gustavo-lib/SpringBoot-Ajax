@@ -12,7 +12,7 @@ Desde el ControllerFront se puede mostrar las personas que estan en la bd tambie
 METHOD | PATH | DESCRIPTION 
 ------------|-----|------------
 GET |http://localhost:8080/view | get all persons
-GET |http://localhost:8080/add | save one person
+GET |http://localhost:8080/add | save new Homero Simpson
 
 
 ### ControllerRest
