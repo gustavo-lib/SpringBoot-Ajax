@@ -3,7 +3,7 @@ Desde el ControllerFront se puede mostrar las personas que estan en la bd tambie
 
 ## Requisitos
 - JDK 8 
-- Maven 3.0
+- Gradel
 - Eclipse 
 - Spring Boot
 
