@@ -2,7 +2,7 @@
 Desde el ControllerFront se puede mostrar las personas que estan en la bd tambien se puede simular un formulario para agregar una nueva persona haciendo click en "Click here to submit the form"  
 
 ## Requisitos
-- JDK 8 
+- JDK 11 
 - Gradel
 - Eclipse 
 - Spring Boot
